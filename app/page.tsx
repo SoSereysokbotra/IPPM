@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
-import MapIllustration from "./MapIllustration";
+import MapIllustration from "./components/ui/MapIllustration";
 
 
 export default function IPPMHero() {
