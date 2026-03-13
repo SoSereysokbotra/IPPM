@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # Uncomment to load a local .env file into the container:
+    # env_file:
+    #   - .env.local
+    restart: unless-stopped
