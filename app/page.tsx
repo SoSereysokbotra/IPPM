@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/Header";
+import MapIllustration from "./MapIllustration";
+
 
 export default function IPPMHero() {
   return (
@@ -256,36 +258,7 @@ export default function IPPMHero() {
           <p className="text-muted text-center text-sm sm:text-base mb-16">
             Ready to digitize your production line? Contact our deployment team.
           </p>
-
-          {/* --- DOTTED MAP ILLUSTRATION START --- */}
-          <div className="relative w-full max-w-4xl mx-auto mb-20 px-4 select-none">
-            {/* Placeholder for local map asset */}
-            <img
-              src="https://res.cloudinary.com/dg5grwcd5/image/upload/v1773397580/32008a67-844a-43bf-93e8-e3361f6ff944_rwfjx4.png"
-              alt="Dotted World Map"
-              className="w-full h-auto opacity-60 dark:opacity-40 drop-shadow-sm pointer-events-none"
-            />
-
-            {/* Animated Pulsing Pin - Phnom Penh, Cambodia */}
-            {/* Note: You may need to slightly adjust top/left percentages based on your specific map's dimensions */}
-            <div
-              className="absolute group cursor-pointer"
-              style={{ top: "58%", left: "77.5%" }}
-            >
-              {/* Pulsing Dot */}
-              <div className="relative flex h-4 w-4 sm:h-5 sm:w-5 -translate-x-1/2 -translate-y-1/2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-4 w-4 sm:h-5 sm:w-5 bg-brand-primary border-2 border-white shadow-lg"></span>
-              </div>
-
-              {/* Hover Tooltip */}
-              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-max bg-gray-900 text-white text-xs px-3 py-1.5 rounded shadow-lg pointer-events-none">
-                Phnom Penh, Cambodia
-                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900"></div>
-              </div>
-            </div>
-          </div>
-          {/* --- DOTTED MAP ILLUSTRATION END --- */}
+          <MapIllustration />
 
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 text-center mb-16">
             <div className="flex flex-col items-center">
