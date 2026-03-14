@@ -40,7 +40,7 @@ export default function Signup() {
                 i
               </div>
               <span className="text-xl font-bold tracking-tight">
-                iPPM Cloud
+                iPPM
               </span>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Signup() {
                 01
               </div>
               <p className="text-sm text-white/80">
-                Connect ESP32-S3 sensors in minutes.
+                Connect ESP32 sensors in minutes.
               </p>
             </div>
             <div className="flex items-center gap-4 group">
@@ -81,11 +81,11 @@ export default function Signup() {
         </>
       }
     >
-      <div className="mb-10">
+      <div className="mt-25">
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3">
           Register Factory<span className="text-brand-primary">.</span>
         </h1>
-        <p className="text-muted text-sm sm:text-base leading-relaxed">
+        <p className="text-muted text-sm sm:text-base leading-relaxed mb-8">
           Join the smart manufacturing revolution in Cambodia. Set up your
           industrial account and connect your first IoT nodes.
         </p>
@@ -101,7 +101,7 @@ export default function Signup() {
             <input
               type="text"
               placeholder="Sophea Mean"
-              className="w-full px-4 py-3 rounded-xl bg-dark-surface border border-dark-border text-white focus:outline-none focus:border-brand-primary transition-all text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-dark-surface border border-dark-border text-white focus:outline-none focus:border-brand-primary transition-all text-sm mt-1"
             />
           </div>
           <div className="space-y-2">
@@ -111,7 +111,7 @@ export default function Signup() {
             <input
               type="text"
               placeholder="PP Tech Garments"
-              className="w-full px-4 py-3 rounded-xl bg-dark-surface border border-dark-border text-white focus:outline-none focus:border-brand-primary transition-all text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-dark-surface border border-dark-border text-white focus:outline-none focus:border-brand-primary transition-all text-sm mt-1"
             />
           </div>
         </div>
