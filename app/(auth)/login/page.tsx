@@ -10,7 +10,7 @@ export default function Login() {
       leftTopContent={
         <Link
           href="/"
-          className="text-muted hover:text-white transition-colors text-sm flex items-center gap-2"
+          className="text-muted hover:text-gray-900 dark:hover:text-white transition-colors text-sm flex items-center gap-2"
         >
           <svg
             width="20"
@@ -33,21 +33,21 @@ export default function Login() {
       }}
       rightOverlay={
         <>
-          <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent dark:from-dark-bg dark:via-dark-bg/60 dark:to-transparent"></div>
           <div className="absolute inset-0 bg-brand-primary/10 mix-blend-overlay"></div>
         </>
       }
       rightContent={
         <>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-medium text-white w-fit mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-md border border-black/20 dark:border-white/20 text-xs font-medium text-gray-900 dark:text-white w-fit mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
             System Status: Optimal
           </div>
 
-          <h2 className="text-3xl xl:text-4xl font-medium text-white mb-4 leading-tight tracking-tight">
+          <h2 className="text-3xl xl:text-4xl font-medium text-gray-900 dark:text-white mb-4 leading-tight tracking-tight">
             Eliminate Downtime with <br /> Predictive Maintenance.
           </h2>
-          <p className="text-white/70 max-w-md leading-relaxed text-sm xl:text-base">
+          <p className="text-gray-600 dark:text-white/70 max-w-md leading-relaxed text-sm xl:text-base">
             Forecast equipment failures before they happen and monitor live
             telemetry through our four-layered IoT cloud architecture.
           </p>
@@ -71,7 +71,7 @@ export default function Login() {
         <div className="space-y-2">
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-gray-600 dark:text-gray-300"
           >
             Work Email
           </label>
@@ -79,7 +79,7 @@ export default function Login() {
             type="email"
             id="email"
             placeholder="factory.manager@example.com"
-            className="w-full px-4 py-3.5 rounded-xl bg-dark-surface border border-dark-border text-white placeholder-muted focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
+            className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-muted focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
             required
           />
         </div>
@@ -89,7 +89,7 @@ export default function Login() {
           <div className="flex items-center justify-between">
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-300"
+              className="block text-sm font-medium text-gray-600 dark:text-gray-300"
             >
               Password
             </label>
@@ -104,7 +104,7 @@ export default function Login() {
             type="password"
             id="password"
             placeholder="••••••••"
-            className="w-full px-4 py-3.5 rounded-xl bg-dark-surface border border-dark-border text-white placeholder-muted focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
+            className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-muted focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all"
             required
           />
         </div>
@@ -114,7 +114,7 @@ export default function Login() {
           <input
             type="checkbox"
             id="remember"
-            className="w-4 h-4 rounded bg-dark-surface border-dark-border text-brand-primary focus:ring-brand-primary/50 focus:ring-offset-dark-bg"
+            className="w-4 h-4 rounded bg-white dark:bg-dark-surface border-gray-200 dark:border-dark-border text-brand-primary focus:ring-brand-primary/50 focus:ring-offset-gray-50 dark:focus:ring-offset-dark-bg"
           />
           <label htmlFor="remember" className="text-sm text-muted">
             Remember this device for 30 days
@@ -135,7 +135,7 @@ export default function Login() {
         Don't have an enterprise account?{" "}
         <a
           href="#"
-          className="text-white hover:text-brand-primary font-medium transition-colors"
+          className="text-gray-900 dark:text-white hover:text-brand-primary font-medium transition-colors"
         >
           Request access
         </a>

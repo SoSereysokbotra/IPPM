@@ -9,7 +9,7 @@ export default function VerifyOTP() {
       leftTopContent={
         <Link
           href="/signup"
-          className="text-muted hover:text-white transition-colors text-sm flex items-center gap-2"
+          className="text-muted hover:text-gray-900 dark:hover:text-white transition-colors text-sm flex items-center gap-2"
         >
           <svg
             width="20"
@@ -33,7 +33,7 @@ export default function VerifyOTP() {
       }}
       rightOverlay={
         <>
-          <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent dark:from-dark-bg dark:via-dark-bg/20 dark:to-transparent"></div>
           <div className="absolute inset-0 bg-brand-primary/5 backdrop-blur-[2px]"></div>
         </>
       }
@@ -45,24 +45,24 @@ export default function VerifyOTP() {
             </div>
           </div>
 
-          <h2 className="text-3xl xl:text-4xl font-medium text-white mb-4 leading-tight">
+          <h2 className="text-3xl xl:text-4xl font-medium text-gray-900 dark:text-white mb-4 leading-tight">
             Secure Cloud <br />
             <span className="text-secondary">Authentication.</span>
           </h2>
-          <p className="text-white/70 max-w-md leading-relaxed text-sm xl:text-base mb-8">
+          <p className="text-gray-600 dark:text-white/70 max-w-md leading-relaxed text-sm xl:text-base mb-8">
             Protecting Cambodia's industrial future through Role-Based Access
             Control (RBAC) and encrypted device management.
           </p>
 
           {/* Micro Metrics for Professional Feel */}
-          <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
+          <div className="grid grid-cols-2 gap-8 border-t border-black/10 dark:border-white/10 pt-8">
             <div>
               <p className="text-xs text-muted mb-1">Latency</p>
-              <p className="text-xl font-mono text-white">≤ 1.0s</p>
+              <p className="text-xl font-mono text-gray-900 dark:text-white">≤ 1.0s</p>
             </div>
             <div>
               <p className="text-xs text-muted mb-1">Packet Loss</p>
-              <p className="text-xl font-mono text-white">≤ 1%</p>
+              <p className="text-xl font-mono text-gray-900 dark:text-white">≤ 1%</p>
             </div>
           </div>
         </>
@@ -100,7 +100,7 @@ export default function VerifyOTP() {
               key={i}
               type="text"
               maxLength={1}
-              className="w-full aspect-square text-center text-xl font-bold bg-dark-surface border border-dark-border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all text-white"
+              className="w-full aspect-square text-center text-xl font-bold bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary transition-all text-gray-900 dark:text-white"
             />
           ))}
         </div>
@@ -110,7 +110,7 @@ export default function VerifyOTP() {
             Verify & Enter Dashboard
           </button>
 
-          <button className="w-full px-6 py-3.5 rounded-xl bg-transparent border border-dark-border hover:bg-dark-surface transition-colors text-muted text-sm font-medium">
+          <button className="w-full px-6 py-3.5 rounded-xl bg-transparent border border-gray-200 dark:border-dark-border hover:bg-gray-100 dark:hover:bg-dark-surface transition-colors text-muted text-sm font-medium">
             Resend Code
           </button>
         </div>
@@ -118,7 +118,7 @@ export default function VerifyOTP() {
 
       <p className="mt-8 text-center text-xs text-muted leading-relaxed">
         By verifying, you confirm secure device handshaking protocols for <br />
-        <span className="text-white">TLS-encrypted MQTT communication</span>.
+        <span className="text-gray-900 dark:text-white">TLS-encrypted MQTT communication</span>.
       </p>
     </AuthLayout>
   );

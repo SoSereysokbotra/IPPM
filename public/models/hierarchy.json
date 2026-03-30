@@ -1,0 +1,1087 @@
+[
+  {
+    "id": 0,
+    "name": "Sketchfab_model",
+    "children": [
+      1
+    ]
+  },
+  {
+    "id": 1,
+    "name": "c87c2a6ebd5447f7ac496076c3c610d3.fbx",
+    "children": [
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "name": "RootNode",
+    "children": [
+      3
+    ]
+  },
+  {
+    "id": 3,
+    "name": "PDM INDUSTRIAL ROBOTIC ARM PROJECT v84",
+    "children": [
+      4,
+      30,
+      40,
+      103,
+      117,
+      132,
+      146,
+      156
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Component-1-Base:1",
+    "children": [
+      5
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Component-1-Base",
+    "children": [
+      6,
+      10,
+      14,
+      18,
+      22,
+      26
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Component2:1",
+    "children": [
+      7
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Component2",
+    "children": [
+      8
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Body1",
+    "children": [
+      9
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 10,
+    "name": "Component24:1",
+    "children": [
+      11
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Component24",
+    "children": [
+      12
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Body1",
+    "children": [
+      13
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 14,
+    "name": "Component25:1",
+    "children": [
+      15
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Component25",
+    "children": [
+      16
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Body1",
+    "children": [
+      17
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 18,
+    "name": "Component26:1",
+    "children": [
+      19
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Component26",
+    "children": [
+      20
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Body1",
+    "children": [
+      21
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 22,
+    "name": "Component27:1",
+    "children": [
+      23
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Component27",
+    "children": [
+      24
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Body1",
+    "children": [
+      25
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 26,
+    "name": "Component28:1",
+    "children": [
+      27
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Component28",
+    "children": [
+      28
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Body1",
+    "children": [
+      29
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 30,
+    "name": "Component-2-Jaw-1:1",
+    "children": [
+      31
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Component-2-Jaw-1",
+    "children": [
+      32,
+      36
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Component4:1",
+    "children": [
+      33
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Component4",
+    "children": [
+      34
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Body1",
+    "children": [
+      35
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 36,
+    "name": "Component17:1",
+    "children": [
+      37
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Component17",
+    "children": [
+      38
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Body1",
+    "children": [
+      39
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 40,
+    "name": "Component-3-Jaw-2:1",
+    "children": [
+      41
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Component-3-Jaw-2",
+    "children": [
+      42,
+      47,
+      51,
+      55,
+      59,
+      63,
+      67,
+      71,
+      75,
+      79,
+      83,
+      87,
+      91,
+      95,
+      99
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Component6:1",
+    "children": [
+      43
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Component6",
+    "children": [
+      44
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Body1",
+    "children": [
+      45,
+      46
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Body1_Paint - Enamel Glossy (Yellow)_0"
+  },
+  {
+    "id": 46,
+    "name": "Body1__0"
+  },
+  {
+    "id": 47,
+    "name": "Component29:1",
+    "children": [
+      48
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Component29",
+    "children": [
+      49
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Body1",
+    "children": [
+      50
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 51,
+    "name": "Component30:1",
+    "children": [
+      52
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Component30",
+    "children": [
+      53
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Body1",
+    "children": [
+      54
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 55,
+    "name": "Component31:1",
+    "children": [
+      56
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Component31",
+    "children": [
+      57
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Body1",
+    "children": [
+      58
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 59,
+    "name": "Component32:1",
+    "children": [
+      60
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Component32",
+    "children": [
+      61
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Body1",
+    "children": [
+      62
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 63,
+    "name": "Component33:1",
+    "children": [
+      64
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Component33",
+    "children": [
+      65
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Body1",
+    "children": [
+      66
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 67,
+    "name": "Component34:1",
+    "children": [
+      68
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Component34",
+    "children": [
+      69
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Body1",
+    "children": [
+      70
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 71,
+    "name": "Component35:1",
+    "children": [
+      72
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Component35",
+    "children": [
+      73
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Body1",
+    "children": [
+      74
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 75,
+    "name": "Component36:1",
+    "children": [
+      76
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Component36",
+    "children": [
+      77
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Body1",
+    "children": [
+      78
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 79,
+    "name": "Component37:1",
+    "children": [
+      80
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Component37",
+    "children": [
+      81
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Body1",
+    "children": [
+      82
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 83,
+    "name": "Component38:1",
+    "children": [
+      84
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Component38",
+    "children": [
+      85
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Body1",
+    "children": [
+      86
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 87,
+    "name": "Component39:1",
+    "children": [
+      88
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Component39",
+    "children": [
+      89
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Body1",
+    "children": [
+      90
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 91,
+    "name": "Component40:1",
+    "children": [
+      92
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Component40",
+    "children": [
+      93
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Body1",
+    "children": [
+      94
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 95,
+    "name": "Component41:1",
+    "children": [
+      96
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Component41",
+    "children": [
+      97
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Body1",
+    "children": [
+      98
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 99,
+    "name": "Component42:1",
+    "children": [
+      100
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Component42",
+    "children": [
+      101
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Body1",
+    "children": [
+      102
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 103,
+    "name": "Component-4-Jaw-3:1",
+    "children": [
+      104
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Component-4-Jaw-3",
+    "children": [
+      105,
+      109,
+      113
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Component8:1",
+    "children": [
+      106
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Component8",
+    "children": [
+      107
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Body1",
+    "children": [
+      108
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 109,
+    "name": "Component22:1",
+    "children": [
+      110
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Component22",
+    "children": [
+      111
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Body1",
+    "children": [
+      112
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 113,
+    "name": "Component23:1",
+    "children": [
+      114
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Component23",
+    "children": [
+      115
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Body1",
+    "children": [
+      116
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 117,
+    "name": "Component-5-Jaw-4:1",
+    "children": [
+      118
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Component-5-Jaw-4",
+    "children": [
+      119,
+      124,
+      128
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Component10:1",
+    "children": [
+      120
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Component10",
+    "children": [
+      121
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Body1",
+    "children": [
+      122,
+      123
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Body1_Paint - Enamel Glossy (Black)_0"
+  },
+  {
+    "id": 123,
+    "name": "Body1__0"
+  },
+  {
+    "id": 124,
+    "name": "Component20:1",
+    "children": [
+      125
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Component20",
+    "children": [
+      126
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Body1",
+    "children": [
+      127
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 128,
+    "name": "Component21:1",
+    "children": [
+      129
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Component21",
+    "children": [
+      130
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Body1",
+    "children": [
+      131
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Body1_Steel - Satin_0"
+  },
+  {
+    "id": 132,
+    "name": "Component-6-Jaw-5:1",
+    "children": [
+      133
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Component-6-Jaw-5",
+    "children": [
+      134,
+      138,
+      142
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Component12:1",
+    "children": [
+      135
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Component12",
+    "children": [
+      136
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Body1",
+    "children": [
+      137
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 138,
+    "name": "Component18:1",
+    "children": [
+      139
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Component18",
+    "children": [
+      140
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Body1",
+    "children": [
+      141
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 142,
+    "name": "Component19:1",
+    "children": [
+      143
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Component19",
+    "children": [
+      144
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Body1",
+    "children": [
+      145
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Body1_Paint - Enamel Glossy (Yellow)_0"
+  },
+  {
+    "id": 146,
+    "name": "Component-7-Jaw-6:1",
+    "children": [
+      147
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Component-7-Jaw-6",
+    "children": [
+      148,
+      152
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Component14:1",
+    "children": [
+      149
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Component14",
+    "children": [
+      150
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Body1",
+    "children": [
+      151
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Body1_Brass - Polished_0"
+  },
+  {
+    "id": 152,
+    "name": "Component43:1",
+    "children": [
+      153
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Component43",
+    "children": [
+      154
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Body1",
+    "children": [
+      155
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 156,
+    "name": "Component-8-Jaw-7:1",
+    "children": [
+      157
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Component-8-Jaw-7",
+    "children": [
+      158,
+      162
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Component16:1",
+    "children": [
+      159
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Component16",
+    "children": [
+      160
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Body1",
+    "children": [
+      161
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  },
+  {
+    "id": 162,
+    "name": "Component16:2",
+    "children": [
+      163
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Component16",
+    "children": [
+      164
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Body1",
+    "children": [
+      165
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Body1_Aluminum - Anodized Glossy (Grey)_0"
+  }
+]

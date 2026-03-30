@@ -30,14 +30,14 @@ export default function AuthLayout({
 }: AuthLayoutProps) {
   return (
     <div
-      className={`min-h-screen w-full bg-dark-bg text-white flex font-sans ${selectionColor}`}
+      className={`min-h-screen w-full bg-gray-50 dark:bg-dark-bg text-gray-900 dark:text-white flex font-sans ${selectionColor}`}
     >
       {/* ========================================
           LEFT SIDE: FORM / MAIN CONTENT
           ======================================== */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-16 md:px-24 xl:px-32 relative z-10 overflow-y-auto">
         {leftTopContent && (
-          <div className="absolute top-8 left-6 sm:left-16 md:left-24 xl:left-32">
+          <div className="absolute top-8 left-6 sm:left-16 md:left-24 xl:left-32 flex items-center justify-between w-[calc(100%-48px)] sm:w-[calc(100%-128px)] md:w-[calc(100%-192px)] xl:w-[calc(100%-256px)]">
             {leftTopContent}
           </div>
         )}
@@ -50,8 +50,8 @@ export default function AuthLayout({
       {/* ========================================
           RIGHT SIDE: BRANDING / VISUAL
           ======================================== */}
-      <div className="hidden lg:flex w-1/2 relative bg-dark-bg p-4 pl-0">
-        <div className="relative w-full h-full rounded-3xl overflow-hidden border border-dark-border">
+      <div className="hidden lg:flex w-1/2 relative bg-gray-100 dark:bg-dark-bg p-4 pl-0">
+        <div className="relative w-full h-full rounded-3xl overflow-hidden border border-gray-200 dark:border-dark-border">
           {/* Background Image */}
           <img
             src={rightImage.src}

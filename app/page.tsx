@@ -4,6 +4,7 @@ import Image from "next/image";
 import MapIllustration from "./components/ui/MapIllustration"; // Ensure this path is correct
 import { motion, Variants, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { ThemeToggle } from "../components/ui/theme-toggle";
 
 export default function IPPMHero() {
   const fadeUp: Variants = {
@@ -86,34 +87,34 @@ export default function IPPMHero() {
     <header className="w-full flex justify-between items-center py-6 px-6 lg:px-16 absolute top-0 left-0 z-50">
       {/* Logo */}
       <div className="flex-1 flex justify-start">
-        <div className="text-2xl font-bold tracking-tight text-white flex items-center gap-1 cursor-pointer">
-          i<span className="text-[#ff5e3a]">PPM</span>
+        <div className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex items-center gap-1 cursor-pointer">
+          i<span className="text-brand-primary">PPM</span>
         </div>
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center gap-8 bg-dark-bg/40 backdrop-blur-md px-8 py-3 rounded-full border border-gray-800/60">
+      <nav className="hidden md:flex items-center gap-8 bg-white/80 dark:bg-dark-bg/40 backdrop-blur-md px-8 py-3 rounded-full border border-gray-200 dark:border-gray-800/60">
         <a
           href="#"
-          className="text-xs tracking-[0.15em] font-medium text-gray-400 hover:text-white uppercase transition-colors"
+          className="text-xs tracking-[0.15em] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white uppercase transition-colors"
         >
           Features
         </a>
         <a
           href="#"
-          className="text-xs tracking-[0.15em] font-medium text-gray-400 hover:text-white uppercase transition-colors"
+          className="text-xs tracking-[0.15em] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white uppercase transition-colors"
         >
           Applications
         </a>
         <a
           href="#"
-          className="text-xs tracking-[0.15em] font-medium text-gray-400 hover:text-white uppercase transition-colors"
+          className="text-xs tracking-[0.15em] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white uppercase transition-colors"
         >
           Architecture
         </a>
         <a
           href="#"
-          className="text-xs tracking-[0.15em] font-medium text-gray-400 hover:text-white uppercase transition-colors"
+          className="text-xs tracking-[0.15em] font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white uppercase transition-colors"
         >
           Profile
         </a>
@@ -121,13 +122,14 @@ export default function IPPMHero() {
 
       {/* Action Buttons */}
       <div className="flex-1 flex items-center justify-end gap-6">
+        <ThemeToggle />
         <a
           href="#"
-          className="hidden sm:block text-xs tracking-[0.1em] font-semibold text-gray-300 hover:text-white uppercase transition-colors"
+          className="hidden sm:block text-xs tracking-[0.1em] font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white uppercase transition-colors"
         >
           Log In
         </a>
-        <button className="bg-[#ff5e3a] hover:bg-[#e04a29] text-white px-6 py-2.5 text-xs tracking-[0.1em] font-bold uppercase transition-colors duration-300 shadow-[0_0_15px_rgba(255,94,58,0.3)] hover:shadow-[0_0_25px_rgba(255,94,58,0.5)]">
+        <button className="bg-brand-primary hover:bg-brand-primary-hover text-white px-6 py-2.5 text-xs tracking-[0.1em] font-bold uppercase transition-colors duration-300 shadow-[0_0_15px_rgba(26,115,232,0.3)] hover:shadow-[0_0_25px_rgba(26,115,232,0.5)]">
           Get Started
         </button>
       </div>
@@ -136,17 +138,17 @@ export default function IPPMHero() {
 
   return (
     // FIX 1: Removed `overflow-hidden` from the root to allow `position: sticky` to work.
-    <div className="bg-dark-bg text-white font-sans selection:bg-[#ff5e3a] selection:text-white w-full">
+    <div className="bg-gray-50 dark:bg-dark-bg text-gray-900 dark:text-white font-sans selection:bg-brand-primary selection:text-white w-full">
       {/* ========================================
         HERO SECTION (100vh)
         ======================================== */}
       {/* Kept overflow hidden ONLY on the hero section so the circle and text don't break horizontal scroll */}
-      <div className="relative min-h-screen w-full flex flex-col overflow-hidden">
+      <div className="bg-gray-50 dark:bg-dark-bg relative min-h-screen w-full flex flex-col overflow-hidden">
         <Header />
 
         {/* --- Background Elements --- */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center z-0 pointer-events-none select-none">
-          <span className="text-[16vw] font-black text-white/[0.03] leading-none tracking-tighter whitespace-nowrap">
+          <span className="text-[16vw] font-black text-black/[0.04] dark:text-white/[0.04] leading-none tracking-tighter whitespace-nowrap">
             IPPM
           </span>
         </div>
@@ -155,7 +157,7 @@ export default function IPPMHero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="absolute top-[40%] lg:top-1/2 left-1/2 -translate-y-1/2 translate-x-[10%] lg:translate-x-[40%] w-48 h-48 lg:w-[22rem] lg:h-[22rem] border-[12px] lg:border-[16px] border-[#ff5e3a] rounded-full z-0 pointer-events-none"
+          className="absolute top-[40%] lg:top-1/2 left-1/2 -translate-y-1/2 translate-x-[10%] lg:translate-x-[40%] w-48 h-48 lg:w-[22rem] lg:h-[22rem] border-[12px] lg:border-[16px] border-brand-primary rounded-full z-0 pointer-events-none"
         />
 
         <motion.div
@@ -180,7 +182,7 @@ export default function IPPMHero() {
         >
           <div className="flex-1 flex items-center justify-between pointer-events-none mt-10 lg:mt-0">
             <motion.div variants={fadeUp} className="pointer-events-auto z-30">
-              <h1 className="text-6xl sm:text-6xl lg:text-[5.5rem] font-bold leading-[1.1] tracking-tight">
+              <h1 className="text-6xl sm:text-6xl lg:text-[5.5rem] font-bold leading-[1.1] tracking-tight text-gray-900 dark:text-white">
                 Next-Gen <br />
                 Manufacturing
               </h1>
@@ -190,30 +192,30 @@ export default function IPPMHero() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12 lg:gap-0 mt-auto pointer-events-auto pb-4">
             <motion.div
               variants={fadeUp}
-              className="max-w-[320px] bg-dark-bg/60 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none p-5 lg:p-0 rounded-xl lg:rounded-none relative z-30"
+              className="max-w-[320px] bg-white/60 dark:bg-dark-bg/60 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none p-5 lg:p-0 rounded-xl lg:rounded-none relative z-30"
             >
-              <h3 className="text-sm font-semibold mb-3 tracking-wide">
+              <h3 className="text-sm font-semibold mb-3 tracking-wide text-gray-800 dark:text-white">
                 Intelligent Cloud Platform.
               </h3>
-              <p className="text-xs text-[#8a8a8c] leading-relaxed mb-8">
+              <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
                 Empowering SMEs with IoT-driven adaptive automation and
                 real-time vision intelligence.
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-24 h-[2px] bg-[#3a3a3c] relative">
-                  <div className="absolute top-0 left-0 h-full w-1/3 bg-[#ff5e3a]"></div>
+                <div className="w-24 h-[2px] bg-gray-300 dark:bg-gray-700 relative">
+                  <div className="absolute top-0 left-0 h-full w-1/3 bg-brand-primary"></div>
                 </div> 
               </div>
             </motion.div>
 
             <motion.div
               variants={fadeUp}
-              className="max-w-[320px] flex flex-col items-start lg:items-end text-left lg:text-right bg-dark-bg/60 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none p-5 lg:p-0 rounded-xl lg:rounded-none z-30"
+              className="max-w-[320px] flex flex-col items-start lg:items-end text-left lg:text-right bg-white/60 dark:bg-dark-bg/60 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none p-5 lg:p-0 rounded-xl lg:rounded-none z-30"
             >
-              <h3 className="text-sm font-semibold mb-3 tracking-wide">
+              <h3 className="text-sm font-semibold mb-3 tracking-wide text-gray-800 dark:text-white">
                 The Workflow.
               </h3>
-              <p className="text-xs text-[#8a8a8c] leading-relaxed mb-6 lg:ml-auto">
+              <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mb-6 lg:ml-auto">
                 3D Digital Twin monitoring designed exclusively for the modern
                 factory floor.
               </p>
@@ -231,7 +233,7 @@ export default function IPPMHero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-medium text-center tracking-tight"
+          className="text-3xl sm:text-4xl font-medium text-center tracking-tight text-gray-900 dark:text-white"
         >
           Why Choose <span className="text-secondary">iPPM</span> for Your
           Production?
@@ -240,7 +242,7 @@ export default function IPPMHero() {
 
       <div
         ref={containerRef}
-        className="relative bg-[#1c2128] text-white w-full"
+        className="relative bg-gray-100 dark:bg-[#1c2128] text-gray-900 dark:text-white w-full"
         style={{ height: `${features.length * 100}vh` }}
       >
         <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
@@ -299,7 +301,7 @@ export default function IPPMHero() {
                     </h3>
 
                     {/* Increased Description Size */}
-                    <p className="text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed mb-10">
+                    <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed mb-10">
                       {features[activeIndex].description}
                     </p>
 
@@ -307,9 +309,9 @@ export default function IPPMHero() {
                       {features[activeIndex].tags.slice(0, 3).map((tag, i) => (
                         <div
                           key={i}
-                          className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-700 bg-[#252a31]"
+                          className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-300 dark:border-gray-700 bg-gray-200 dark:bg-[#252a31]"
                         >
-                          <div className="w-3 h-3 rounded-full bg-gray-400" />
+                          <div className="w-3 h-3 rounded-full bg-gray-500 dark:bg-gray-400" />
                         </div>
                       ))}
                     </div>
@@ -338,7 +340,7 @@ export default function IPPMHero() {
                     alt={features[activeIndex].title}
                     className="w-full h-full object-contain drop-shadow-2xl z-10 scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#1c2128] z-20 pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-gray-100 dark:to-[#1c2128] z-20 pointer-events-none"></div>
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -385,7 +387,7 @@ export default function IPPMHero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex flex-col gap-4 sm:gap-6"
           >
-            <div className="relative w-full h-[450px] sm:h-[550px] rounded-3xl overflow-hidden group bg-dark-surface border border-dark-border cursor-pointer">
+            <div className="relative w-full h-[450px] sm:h-[550px] rounded-3xl overflow-hidden group bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border cursor-pointer">
               <div className="absolute inset-0 flex items-center justify-center transition-transform duration-700 ease-in-out group-hover:scale-105">
                 <img
                   src="https://res.cloudinary.com/dg5grwcd5/image/upload/v1773387153/pexels-chuck-2973392_t3hik9.jpg"
@@ -405,7 +407,7 @@ export default function IPPMHero() {
               </div>
             </div>
 
-            <div className="relative w-full h-[350px] rounded-3xl overflow-hidden group bg-dark-surface border border-dark-border cursor-pointer">
+            <div className="relative w-full h-[350px] rounded-3xl overflow-hidden group bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border cursor-pointer">
               <div className="absolute inset-0 flex items-center justify-center transition-transform duration-700 ease-in-out group-hover:scale-105">
                 <img
                   src="https://res.cloudinary.com/dg5grwcd5/image/upload/v1773386990/pexels-zakhar-9407601_jpbr7t.jpg"
@@ -434,7 +436,7 @@ export default function IPPMHero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col gap-4 sm:gap-6"
           >
-            <div className="relative w-full h-[350px] rounded-3xl overflow-hidden group bg-dark-surface border border-dark-border cursor-pointer">
+            <div className="relative w-full h-[350px] rounded-3xl overflow-hidden group bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border cursor-pointer">
               <div className="absolute inset-0 flex items-center justify-center transition-transform duration-700 ease-in-out group-hover:scale-105">
                 <img
                   src="https://res.cloudinary.com/dg5grwcd5/image/upload/v1773386708/pexels-cottonbro-4709369_ys1qfj.jpg"
@@ -454,7 +456,7 @@ export default function IPPMHero() {
               </div>
             </div>
 
-            <div className="relative w-full h-[504px] rounded-3xl overflow-hidden group bg-dark-surface border border-dark-border cursor-pointer">
+            <div className="relative w-full h-[504px] rounded-3xl overflow-hidden group bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border cursor-pointer">
               <div className="absolute inset-0 flex items-center justify-center transition-transform duration-700 ease-in-out group-hover:scale-105">
                 <img
                   src="https://res.cloudinary.com/dg5grwcd5/image/upload/v1773387072/pexels-tima-miroshnichenko-5380664_api0pc.jpg"
@@ -490,16 +492,16 @@ export default function IPPMHero() {
         >
           {/* Section Header */}
           <div className="text-center mb-16">
-            <p className="text-[#ff5e3a] uppercase tracking-[0.2em] text-xs font-bold mb-4">
+            <p className="text-brand-primary uppercase tracking-[0.2em] text-xs font-bold mb-4">
               Deployment & Integration
             </p>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
               Industrial{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff5e3a] to-[#ff8c3a]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-[#60a5fa]">
                 Partnerships
               </span>
             </h2>
-            <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+            <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
               Ready to digitize your production line? Connect with our
               engineering team to architect a custom edge-computing solution for
               your facility.
@@ -511,9 +513,9 @@ export default function IPPMHero() {
           {/* Contact Info Grid */}
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
             {/* Card 1: Tech Support */}
-            <div className="bg-[#15191e] border border-gray-800/60 p-8 hover:border-[#ff5e3a]/50 transition-colors group relative rounded-sm">
-              <h4 className="text-white text-lg font-bold mb-2 flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-[#ff5e3a]"></span>
+            <div className="bg-white dark:bg-[#15191e] border border-gray-200 dark:border-gray-800/60 p-8 hover:border-brand-primary/50 transition-colors group relative rounded-sm">
+              <h4 className="text-gray-900 dark:text-white text-lg font-bold mb-2 flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-brand-primary"></span>
                 Technical Support
               </h4>
               <p className="text-gray-500 text-sm mb-6 leading-relaxed">
@@ -522,22 +524,22 @@ export default function IPPMHero() {
               </p>
               <a
                 href="mailto:dev@ippm-cloud.com"
-                className="text-gray-300 font-mono text-sm group-hover:text-[#ff5e3a] transition-colors border-b border-gray-700 group-hover:border-[#ff5e3a] pb-1"
+                className="text-gray-600 dark:text-gray-300 font-mono text-sm group-hover:text-brand-primary transition-colors border-b border-gray-300 dark:border-gray-700 group-hover:border-brand-primary pb-1"
               >
                 dev@ippm-cloud.com
               </a>
             </div>
 
             {/* Card 2: Location */}
-            <div className="bg-[#15191e] border border-gray-800/60 p-8 hover:border-[#ff5e3a]/50 transition-colors group relative rounded-sm">
-              <h4 className="text-white text-lg font-bold mb-2 flex items-center gap-3">
-                <span className="w-2 h-2 rounded-full bg-gray-500 group-hover:bg-[#ff5e3a] transition-colors"></span>
+            <div className="bg-white dark:bg-[#15191e] border border-gray-200 dark:border-gray-800/60 p-8 hover:border-brand-primary/50 transition-colors group relative rounded-sm">
+              <h4 className="text-gray-900 dark:text-white text-lg font-bold mb-2 flex items-center gap-3">
+                <span className="w-2 h-2 rounded-full bg-gray-400 dark:bg-gray-500 group-hover:bg-brand-primary transition-colors"></span>
                 HQ Location
               </h4>
               <p className="text-gray-500 text-sm mb-4 leading-relaxed">
                 Hardware development and testing facility.
               </p>
-              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 font-mono text-sm leading-relaxed">
                 Traeng Trayueng,
                 <br />
                 Kampong Speu Province,
@@ -547,20 +549,20 @@ export default function IPPMHero() {
             </div>
 
             {/* Card 3: Network Status */}
-            <div className="bg-[#15191e] border border-gray-800/60 p-8 hover:border-[#ff5e3a]/50 transition-colors group relative rounded-sm flex flex-col justify-center">
+            <div className="bg-white dark:bg-[#15191e] border border-gray-200 dark:border-gray-800/60 p-8 hover:border-brand-primary/50 transition-colors group relative rounded-sm flex flex-col justify-center">
               <div className="flex items-center justify-between mb-6">
-                <h4 className="text-white text-lg font-bold">Network Status</h4>
+                <h4 className="text-gray-900 dark:text-white text-lg font-bold">Network Status</h4>
                 <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.6)]"></div>
               </div>
-              <div className="flex justify-between items-center mb-3 border-b border-gray-800/50 pb-2">
+              <div className="flex justify-between items-center mb-3 border-b border-gray-200 dark:border-gray-800/50 pb-2">
                 <span className="text-gray-500 text-sm">
                   Cloud Infrastructure
                 </span>
-                <span className="text-green-400 font-mono text-sm">100%</span>
+                <span className="text-green-500 dark:text-green-400 font-mono text-sm">100%</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-500 text-sm">Edge Node Uptime</span>
-                <span className="text-green-400 font-mono text-sm">99.98%</span>
+                <span className="text-green-500 dark:text-green-400 font-mono text-sm">99.98%</span>
               </div>
             </div>
           </div>
@@ -573,25 +575,25 @@ export default function IPPMHero() {
       <div className="w-full py-32 px-4 sm:px-8 flex justify-center overflow-hidden relative">
         <div className="w-full max-w-6xl relative flex flex-col lg:flex-row items-center justify-end">
           {/* Vertical Navigation */}
-          <div className="hidden xl:flex absolute left-0 top-1/2 -translate-y-1/2 flex-col items-center gap-20 text-xs tracking-[0.3em] uppercase text-gray-500 z-30">
-            <span className="origin-center -rotate-90 cursor-pointer hover:text-white transition-colors">
+          <div className="hidden xl:flex absolute left-0 top-1/2 -translate-y-1/2 flex-col items-center gap-20 text-xs tracking-[0.3em] uppercase text-gray-400 z-30">
+            <span className="origin-center -rotate-90 cursor-pointer hover:text-gray-900 dark:hover:text-white transition-colors">
               Projects
             </span>
-            <span className="origin-center -rotate-90 cursor-pointer text-white font-bold border-b-2 border-[#ff5e3a] pb-1">
+            <span className="origin-center -rotate-90 cursor-pointer text-gray-900 dark:text-white font-bold border-b-2 border-brand-primary pb-1">
               Profile
             </span>
-            <span className="origin-center -rotate-90 cursor-pointer hover:text-white transition-colors">
+            <span className="origin-center -rotate-90 cursor-pointer hover:text-gray-900 dark:hover:text-white transition-colors">
               Skills
             </span>
           </div>
 
-          {/* Main Dark Card Background */}
+          {/* Main Card */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="w-full lg:w-[85%] bg-[#15191e] border border-gray-800/60 shadow-2xl rounded-sm relative flex flex-col lg:flex-row pt-[180px] lg:pt-0 pb-12 lg:pb-20 pr-8 lg:pr-20 pl-8 lg:pl-[380px] mt-[150px] lg:mt-0"
+            className="w-full lg:w-[85%] bg-white dark:bg-[#15191e] border border-gray-200 dark:border-gray-800/60 shadow-2xl rounded-sm relative flex flex-col lg:flex-row pt-[180px] lg:pt-0 pb-12 lg:pb-20 pr-8 lg:pr-20 pl-8 lg:pl-[380px] mt-[150px] lg:mt-0"
           >
             {/* Overlapping Foreground Image (Your Portrait) */}
             <motion.div
@@ -612,7 +614,7 @@ export default function IPPMHero() {
             {/* Right Side Content Area */}
             <div className="w-full flex flex-col justify-center relative z-10 text-center lg:text-left">
               {/* Orange Accent Line */}
-              <div className="w-12 h-[2px] bg-[#ff5e3a] mx-auto lg:mx-0 mb-6"></div>
+              <div className="w-12 h-[2px] bg-brand-primary mx-auto lg:mx-0 mb-6"></div>
 
               {/* REPLACE WITH YOUR NAME */}
               <h3 className="text-4xl lg:text-5xl font-bold mb-3 tracking-tight text-white">
@@ -635,25 +637,25 @@ export default function IPPMHero() {
               {/* Engineering Stats / Skills Grid */}
               <div className="grid grid-cols-2 gap-6 mb-12 text-left max-w-lg mx-auto lg:mx-0 border-t border-gray-800 pt-8">
                 <div>
-                  <h5 className="text-[#ff5e3a] text-xs font-bold uppercase tracking-widest mb-1">
+                  <h5 className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-1">
                     Focus
                   </h5>
                   <p className="text-sm text-gray-300">System Architecture</p>
                 </div>
                 <div>
-                  <h5 className="text-[#ff5e3a] text-xs font-bold uppercase tracking-widest mb-1">
+                  <h5 className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-1">
                     Core Stack
                   </h5>
                   <p className="text-sm text-gray-300">React, Node, Python</p>
                 </div>
                 <div>
-                  <h5 className="text-[#ff5e3a] text-xs font-bold uppercase tracking-widest mb-1">
+                  <h5 className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-1">
                     Hardware
                   </h5>
                   <p className="text-sm text-gray-300">ESP32, IoT Protocols</p>
                 </div>
                 <div>
-                  <h5 className="text-[#ff5e3a] text-xs font-bold uppercase tracking-widest mb-1">
+                  <h5 className="text-brand-primary text-xs font-bold uppercase tracking-widest mb-1">
                     Experience
                   </h5>
                   <p className="text-sm text-gray-300">5+ Years</p>
@@ -666,19 +668,19 @@ export default function IPPMHero() {
                 <div className="flex gap-6 mb-6 sm:mb-0">
                   <a
                     href="#"
-                    className="text-gray-500 hover:text-[#ff5e3a] transition-colors text-sm uppercase tracking-widest font-bold"
+                    className="text-gray-500 hover:text-brand-primary transition-colors text-sm uppercase tracking-widest font-bold"
                   >
                     LinkedIn
                   </a>
                   <a
                     href="#"
-                    className="text-gray-500 hover:text-[#ff5e3a] transition-colors text-sm uppercase tracking-widest font-bold"
+                    className="text-gray-500 hover:text-brand-primary transition-colors text-sm uppercase tracking-widest font-bold"
                   >
                     GitHub
                   </a>
                   <a
                     href="#"
-                    className="text-gray-500 hover:text-[#ff5e3a] transition-colors text-sm uppercase tracking-widest font-bold"
+                    className="text-gray-500 hover:text-brand-primary transition-colors text-sm uppercase tracking-widest font-bold"
                   >
                     Email
                   </a>
@@ -692,15 +694,15 @@ export default function IPPMHero() {
       {/* ========================================
         FOOTER (High-Tech / Industrial Style)
         ======================================== */}
-      <footer className="relative w-full mt-24 pt-16 pb-[18vw] sm:pb-[14vw] lg:pb-[12vw] px-4 sm:px-8 lg:px-12 bg-[#15191e] border-t border-gray-800/60 overflow-hidden">
+      <footer className="relative w-full mt-24 pt-16 pb-[18vw] sm:pb-[14vw] lg:pb-[12vw] px-4 sm:px-8 lg:px-12 bg-gray-100 dark:bg-[#15191e] border-t border-gray-200 dark:border-gray-800/60 overflow-hidden">
         {/* Top Grid Section */}
         <div className="relative z-20 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand & Tagline */}
           <div className="flex flex-col">
-            <h4 className="text-2xl font-bold text-white mb-4 tracking-tight">
-              i<span className="text-[#ff5e3a]">PPM</span>
+            <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">
+              i<span className="text-brand-primary">PPM</span>
             </h4>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
+            <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
               The next generation of industrial IoT and Vision AI. Real-time
               telemetry and edge computing for modern production lines.
             </p>
@@ -708,13 +710,13 @@ export default function IPPMHero() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#ff5e3a] hover:text-[#ff5e3a] transition-colors text-gray-400"
+                className="w-8 h-8 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center hover:border-brand-primary hover:text-brand-primary transition-colors text-gray-500 dark:text-gray-400"
               >
                 <span className="text-xs font-bold">IN</span>
               </a>
               <a
                 href="#"
-                className="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#ff5e3a] hover:text-[#ff5e3a] transition-colors text-gray-400"
+                className="w-8 h-8 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center hover:border-brand-primary hover:text-brand-primary transition-colors text-gray-500 dark:text-gray-400"
               >
                 <span className="text-xs font-bold">GH</span>
               </a>
@@ -723,77 +725,61 @@ export default function IPPMHero() {
 
           {/* Links Column 1 */}
           <div className="flex flex-col">
-            <h5 className="text-white text-sm font-semibold uppercase tracking-wider mb-6">
+            <h5 className="text-gray-900 dark:text-white text-sm font-semibold uppercase tracking-wider mb-6">
               Platform
             </h5>
-            <ul className="flex flex-col gap-3 text-sm text-gray-400">
+            <ul className="flex flex-col gap-3 text-sm text-gray-500 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  Edge Nodes
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">Edge Nodes</a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  Vision AI
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">Vision AI</a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  Telemetry Dashboard
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">Telemetry Dashboard</a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  API Documentation
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">API Documentation</a>
               </li>
             </ul>
           </div>
 
           {/* Links Column 2 */}
           <div className="flex flex-col">
-            <h5 className="text-white text-sm font-semibold uppercase tracking-wider mb-6">
+            <h5 className="text-gray-900 dark:text-white text-sm font-semibold uppercase tracking-wider mb-6">
               Company
             </h5>
-            <ul className="flex flex-col gap-3 text-sm text-gray-400">
+            <ul className="flex flex-col gap-3 text-sm text-gray-500 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  About Us
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">About Us</a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  Engineering Team
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">Engineering Team</a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  Careers
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">Careers</a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#ff5e3a] transition-colors">
-                  Contact
-                </a>
+                <a href="#" className="hover:text-brand-primary transition-colors">Contact</a>
               </li>
             </ul>
           </div>
 
           {/* Status & Location */}
           <div className="flex flex-col">
-            <h5 className="text-white text-sm font-semibold uppercase tracking-wider mb-6">
+            <h5 className="text-gray-900 dark:text-white text-sm font-semibold uppercase tracking-wider mb-6">
               System Status
             </h5>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.6)]"></div>
-              <span className="text-sm text-gray-300 font-medium">
+              <span className="text-sm text-gray-600 dark:text-gray-300 font-medium">
                 All Nodes Operational
               </span>
             </div>
             <p className="text-gray-500 text-xs uppercase tracking-widest mb-2">
               HQ Location
             </p>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
               Traeng Trayueng, Kampong Speu
               <br />
               Cambodia
@@ -802,26 +788,26 @@ export default function IPPMHero() {
         </div>
 
         {/* Bottom Section: Copyright */}
-        <div className="relative z-20 max-w-7xl mx-auto border-t border-gray-800/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 mt-8">
+        <div className="relative z-20 max-w-7xl mx-auto border-t border-gray-200 dark:border-gray-800/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 mt-8">
           <p className="text-gray-500 text-xs sm:text-sm text-center md:text-left">
             © {new Date().getFullYear()} iPPM Platform. Empowering
             Cambodia&apos;s Industrial Future.
           </p>
           <div className="flex gap-6 text-xs text-gray-500">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="#" className="hover:text-brand-primary transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="#" className="hover:text-brand-primary transition-colors">
               Terms of Service
             </a>
           </div>
         </div>
 
         {/* Massive Background Text & Gradient */}
-        <h3 className="absolute bottom-[-10px] sm:bottom-[-20px] left-1/2 -translate-x-1/2 text-[14vw] sm:text-[10vw] font-bold tracking-tighter z-0 opacity-[0.03] whitespace-nowrap text-white pointer-events-none select-none ">
+        <h3 className="absolute bottom-[-10px] sm:bottom-[-20px] left-1/2 -translate-x-1/2 text-[14vw] sm:text-[10vw] font-bold tracking-tighter z-0 opacity-[0.06] dark:opacity-[0.03] whitespace-nowrap text-black dark:text-white pointer-events-none select-none ">
           INTELLIGENT PPM
         </h3>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-[#ff5e3a] opacity-[0.03] blur-[80px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-brand-primary opacity-[0.03] blur-[80px] rounded-full pointer-events-none z-0"></div>
       </footer>
     </div>
   );

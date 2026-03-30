@@ -9,7 +9,7 @@ export default function ForgotPassword() {
       leftTopContent={
         <Link
           href="/login"
-          className="text-muted hover:text-white transition-colors text-sm flex items-center gap-2"
+          className="text-muted hover:text-gray-900 dark:hover:text-white transition-colors text-sm flex items-center gap-2"
         >
           <svg
             width="20"
@@ -33,17 +33,17 @@ export default function ForgotPassword() {
       }}
       rightOverlay={
         <>
-          <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/20 via-transparent to-dark-bg"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-white dark:from-dark-bg/20 dark:via-transparent dark:to-dark-bg"></div>
           <div className="absolute inset-0 bg-secondary/10 mix-blend-multiply"></div>
         </>
       }
       rightContent={
         <>
-          <h2 className="text-3xl xl:text-4xl font-medium text-white mb-4 leading-tight">
+          <h2 className="text-3xl xl:text-4xl font-medium text-gray-900 dark:text-white mb-4 leading-tight">
             Maintain Production <br />
             <span className="text-secondary">Continuity.</span>
           </h2>
-          <p className="text-white/70 max-w-md leading-relaxed text-sm xl:text-base">
+          <p className="text-gray-600 dark:text-white/70 max-w-md leading-relaxed text-sm xl:text-base">
             iPPM ensures that even during account recovery, your IoT nodes
             continue to log critical production data to the cloud.
           </p>
@@ -54,13 +54,13 @@ export default function ForgotPassword() {
               <span className="text-[10px] uppercase tracking-widest text-muted mb-1">
                 Tech Support
               </span>
-              <span className="text-sm font-medium">dev@ippm-cloud.com</span>
+              <span className="text-sm font-medium text-gray-900 dark:text-white">dev@ippm-cloud.com</span>
             </div>
             <div className="flex flex-col">
               <span className="text-[10px] uppercase tracking-widest text-muted mb-1">
                 Response Time
               </span>
-              <span className="text-sm font-medium">Under 2 hours</span>
+              <span className="text-sm font-medium text-gray-900 dark:text-white">Under 2 hours</span>
             </div>
           </div>
         </>
@@ -95,7 +95,7 @@ export default function ForgotPassword() {
         <div className="space-y-2">
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-300"
+            className="block text-sm font-medium text-gray-600 dark:text-gray-300"
           >
             Work Email
           </label>
@@ -103,7 +103,7 @@ export default function ForgotPassword() {
             type="email"
             id="email"
             placeholder="admin@factory-pp.com"
-            className="w-full px-4 py-3.5 rounded-xl bg-dark-surface border border-dark-border text-white placeholder-muted focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-all"
+            className="w-full px-4 py-3.5 rounded-xl bg-white dark:bg-dark-surface border border-gray-200 dark:border-dark-border text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-muted focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-all"
             required
           />
         </div>
@@ -116,7 +116,7 @@ export default function ForgotPassword() {
         </button>
       </form>
 
-      <div className="mt-12 p-4 rounded-xl bg-dark-surface/50 border border-dark-border flex items-start gap-3">
+      <div className="mt-12 p-4 rounded-xl bg-gray-100/50 dark:bg-dark-surface/50 border border-gray-200 dark:border-dark-border flex items-start gap-3">
         <svg
           width="20"
           height="20"

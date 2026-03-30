@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,6 +20,18 @@
   --text-7xl: 4.5rem;     /* 72px */
   --text-8xl: 6rem;       /* 96px */
   --text-9xl: 8rem;       /* 128px */
+
+  /* Landing page colors - Light Context */
+  --color-brand-primary: #1a73e8;
+  --color-brand-primary-hover: #1557b0;
+  --color-dark-bg: #f9fafb; /* Light equivalent for dark-bg */
+  --color-dark-surface: #ffffff; /* Light equivalent for dark-surface */
+  --color-dark-surface-hover: #f3f4f6; /* Light equivalent */
+  --color-dark-border: #e5e7eb; /* Light equivalent border */
+  --color-dark-border-dashed: #d1d5db;
+  --color-muted: #6b7280;
+  --color-placeholder: #9ca3af;
+  --color-secondary: #4b5563;
 }
 
 @theme inline {
@@ -26,7 +40,23 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Landing page colors */
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-primary-hover: var(--color-brand-primary-hover);
+  --color-dark-bg: var(--color-dark-bg);
+  --color-dark-surface: var(--color-dark-surface);
+  --color-dark-surface-hover: var(--color-dark-surface-hover);
+  --color-dark-border: var(--color-dark-border);
+  --color-dark-border-dashed: var(--color-dark-border-dashed);
+  --color-muted: var(--color-muted);
+  --color-placeholder: var(--color-placeholder);
+  --color-secondary: var(--color-secondary);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  
+  /* Original dark properties override for dark mode */
   --color-brand-primary: #1a73e8;
   --color-brand-primary-hover: #1557b0;
   --color-dark-bg: #0e1319;
@@ -37,13 +67,6 @@
   --color-muted: #b9bbbe;
   --color-placeholder: #99aab5;
   --color-secondary: #888888;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
